@@ -10,15 +10,6 @@ import java.util.Random;
 import java.util.Scanner;
 import javax.swing.ImageIcon;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author bw3
- */
 public class Hangman extends javax.swing.JFrame {
     private static String letter, word;
     private static int wrongNum, correctNum, random;
@@ -58,7 +49,7 @@ public class Hangman extends javax.swing.JFrame {
         Random ran = new Random();
         letter = "";
         word = "";
-        wrongNum = 0;
+        wrongNum = 0; 
         correctNum = 0;
         word = wordsList.get(ran.nextInt(wordsList.size()));
         System.out.println("word list size:" + wordsList.size());
