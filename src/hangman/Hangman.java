@@ -107,28 +107,28 @@ public class Hangman extends javax.swing.JFrame {
        
         //System.out.println("Displaying hangman");
         //System.out.println(number + " wrong answers");
-        ImageIcon icon = new ImageIcon("hangman0.png");
+        ImageIcon icon = new ImageIcon(getClass().getResource("/hangman/hangman0.png"));
         imageLabel.setIcon(icon);
         switch(number){
-           case 0 : icon = new ImageIcon("hangman0.png");
+           case 0 : icon = new ImageIcon(getClass().getResource("/hangman/hangman0.png"));
                     imageLabel.setIcon(icon);
                     break;
-           case 1 : icon = new ImageIcon("hangman1.png");
+           case 1 : icon = new ImageIcon(getClass().getResource("/hangman/hangman1.png"));
                     imageLabel.setIcon(icon);
                     break;
-           case 2 : icon = new ImageIcon("hangman2.png");
+           case 2 : icon = new ImageIcon(getClass().getResource("/hangman/hangman2.png"));
                     imageLabel.setIcon(icon);
                     break;
-           case 3 : icon = new ImageIcon("hangman3.png");
+           case 3 : icon = new ImageIcon(getClass().getResource("/hangman/hangman3.png"));
                     imageLabel.setIcon(icon);
                     break;
-           case 4 : icon = new ImageIcon("hangman4.png");
+           case 4 : icon = new ImageIcon(getClass().getResource("/hangman/hangman4.png"));
                     imageLabel.setIcon(icon);
                     break;
-           case 5 : icon = new ImageIcon("hangman5.png");
+           case 5 : icon = new ImageIcon(getClass().getResource("/hangman/hangman5.png"));
                     imageLabel.setIcon(icon);
                     break;
-           case 6 : icon = new ImageIcon("hangman6.png");
+           case 6 : icon = new ImageIcon(getClass().getResource("/hangman/hangman6.png"));
                     imageLabel.setIcon(icon);
                     break;
         }
