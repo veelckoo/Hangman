@@ -54,8 +54,9 @@ public class Hangman extends javax.swing.JFrame {
         word = wordsList.get(ran.nextInt(wordsList.size()));
         System.out.println("word list size:" + wordsList.size());
         System.out.println("random number: " + ran.nextInt(wordsList.size()));
-        
-        correctLetters = new String[word.length()];//initialize empty word with underscores
+       
+        //initialize empty word with underscores
+        correctLetters = new String[word.length()];
         for(int i=0; i<correctLetters.length;i++){
             correctLetters[i] = "_";
         }
@@ -731,6 +732,7 @@ public class Hangman extends javax.swing.JFrame {
          */
         java.awt.EventQueue.invokeLater(new Runnable() {
                
+            @Override
             public void run() {
                 new Hangman().setVisible(true);
                 Hangman hm = new Hangman();
