@@ -1,12 +1,12 @@
 
 package hangman;
 
-import javax.swing.JFrame;
-
 
 public class MsgBox extends javax.swing.JFrame {
 
-    public MsgBox(boolean won, String answer) {
+
+	private static final long serialVersionUID = 1L;
+	public MsgBox(boolean won, String answer) {
         initComponents();
         if (won){
             gameOverLabel.setText("You WIN!");
